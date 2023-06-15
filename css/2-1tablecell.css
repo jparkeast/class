@@ -1,0 +1,81 @@
+.header {
+  /* padding: 200px; */
+  display: table;
+  width: 100%;
+  background-color: #ffffff;
+  font-size: .875rem;
+  line-height: 1.25rem;
+  margin: 0 32px;
+
+}
+
+.table-row {
+  position: sticky;
+  display: table-row;
+  text-align: center;
+  padding: 0 20px 0 35px;
+  border-bottom: 2px solid transparent;
+
+
+}
+
+.menu-item,
+img {
+  display: table-cell;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  vertical-align: middle;
+  /*vertical-align 사용은 display:table-cell 만 해당, 
+    gap은 flex와 grid에서 간격조절 가능
+    display: table에는 padding 만 사용가능함*/
+}
+.menu-item {
+  padding: 16px 24px;
+  padding-right: 20px;
+  position: relative;
+}
+
+.logo {
+  display: table-cell;
+  padding-left: 136px;
+  width: 80px;
+}
+
+img {
+  width: 100%;
+}
+
+.total-menu {
+  display: table-cell;
+  padding-left: 44px;
+}
+.badge {
+  border-radius: 9999px;
+  width: 0.5rem;
+  height: 0.5rem;
+  background-color: red;
+  display: block;
+  position: absolute;
+  top: 13px;
+  right: 0;
+  /*span은 inline속성이라서 width랑 height는 적용불가능
+  적용가능하게 하기위해 display: block을 사용한다.*/
+}
+.sec-badge {
+  border-radius: 9999px;
+  width: 0.5rem;
+  height: 0.5rem;
+  background-color: lightsalmon;
+  position: absolute;
+  top: 13px;
+  right: 8px;
+}
+
+.menu-item:hover {
+  background-color: #ddd;
+}
+
+.menu-item.active {
+  background-color: #ccc;
+}
+
